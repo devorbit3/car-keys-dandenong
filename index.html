@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="zGDwbTvtkggV2sEELc2shpfvRg3w2lBkg7Bl6ijxMwM" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Should Dandenong Drivers Do After Losing Their Car Keys?</title>
+    <!-- Premium Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Global Styles */
+        * { box-sizing: border-box; }
+        body { 
+            /* Premium Gradient Body Background */
+            background: linear-gradient(135deg, #d9e2ec 0%, #b8c6d6 100%); 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            color: #334155; 
+            line-height: 1.8; 
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* Top Logo Section (Not Sticky, Not White) */
+        .header-logo-section {
+            background: linear-gradient(180deg, #eef2f6 0%, #e2e8f0 100%);
+            padding: 25px 20px;
+            text-align: center;
+            border-bottom: 1px solid #cbd5e1;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+        .header-logo-section img {
+            width: 100%;
+            max-width: 280px; /* Medium Size */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(37, 99, 235, 0.8)), url('hero section.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px 140px 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .hero-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            font-weight: 800;
+            color: #ffffff;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        .hero p {
+            font-size: 1.15rem;
+            color: #e2e8f0;
+            text-align: justify;
+            margin: 0 auto;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+        }
+
+        /* Main Container (Extended Width) */
+        .container { 
+            max-width: 1150px; /* Wider Article Area */
+            margin: -60px auto 60px auto; 
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Premium Non-White Cards */
+        .card { 
+            /* Soft metallic/grey-blue gradient instead of white */
+            background: linear-gradient(145deg, #e8f0f8 0%, #dce6f0 100%); 
+            border-radius: 12px; 
+            padding: 50px 60px; 
+            margin-bottom: 35px; 
+            /* Soft white border to give a glass/bevel pop effect */
+            border: 1px solid rgba(255, 255, 255, 0.7); 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.4s ease; 
+        }
+        .card.visible { 
+            opacity: 1; 
+            transform: translateY(0); 
+        }
+        .card:hover {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+            transform: translateY(-3px);
+        }
+
+        /* Typography */
+        h2 { 
+            font-size: 2rem; 
+            color: #1e3a8a; /* Prominent Blue Heading */
+            margin-top: 0;
+            margin-bottom: 25px; 
+            border-bottom: 2px solid #cbd5e1;
+            padding-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+        h3 { 
+            font-size: 1.4rem; 
+            color: #0f172a; 
+            margin-top: 35px; 
+            margin-bottom: 12px; 
+            font-weight: 700;
+            position: relative;
+            padding-left: 18px;
+        }
+        h3::before { 
+            content: ''; 
+            position: absolute; 
+            left: 0; 
+            top: 5px; 
+            bottom: 5px; 
+            width: 5px; 
+            background: linear-gradient(to bottom, #2563eb, #0d9488); 
+            border-radius: 4px; 
+        }
+        p { 
+            font-size: 1.1rem; 
+            margin-bottom: 20px; 
+            text-align: justify; /* Justified text */
+            color: #334155;
+        }
+
+        /* Clear Anchor Links */
+        a.content-link { 
+            color: #1d4ed8; 
+            font-weight: 700; 
+            text-decoration: none; 
+            padding: 4px 10px; 
+            border-radius: 6px; 
+            background-color: #dbeafe; 
+            border: 1px solid #bfdbfe; 
+            transition: all 0.3s ease; 
+            display: inline-block; 
+        }
+        a.content-link:hover { 
+            color: #ffffff; 
+            background-color: #2563eb; 
+            border-color: #2563eb; 
+            transform: translateY(-2px); 
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25); 
+        }
+
+        /* FAQs Styling (Non-White) */
+        .faq-item { 
+            border: 1px solid #cbd5e1; 
+            border-radius: 8px; 
+            margin-bottom: 15px; 
+            background: linear-gradient(145deg, #e2e8f0 0%, #d8e2ea 100%); 
+            overflow: hidden; 
+            transition: all 0.3s ease;
+        }
+        .faq-item:hover {
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.1); 
+            border-color: #94a3b8;
+        }
+        .faq-q { 
+            padding: 20px 25px; 
+            font-weight: 700; 
+            color: #0f172a; 
+            margin: 0; 
+            cursor: pointer; 
+            position: relative; 
+            font-size: 1.1rem;
+            background-color: transparent;
+            transition: color 0.3s ease;
+        }
+        .faq-item:hover .faq-q { color: #2563eb; }
+        .faq-q::after { 
+            content: '+'; 
+            position: absolute; 
+            right: 25px; 
+            top: 50%; 
+            transform: translateY(-50%); 
+            font-size: 1.6rem; 
+            color: #64748b; 
+            transition: all 0.3s ease; 
+        }
+        .faq-item:hover .faq-q::after { content: '−'; color: #2563eb; transform: translateY(-50%) rotate(180deg); }
+        .faq-a { 
+            max-height: 0; 
+            opacity: 0; 
+            padding: 0 25px; 
+            color: #334155; 
+            background-color: transparent;
+            transition: all 0.4s ease-in-out; 
+        }
+        .faq-item:hover .faq-a { 
+            max-height: 300px; 
+            opacity: 1; 
+            padding: 10px 25px 25px 25px; 
+            border-top: 1px solid #cbd5e1;
+        }
+
+        /* Business Profile Section */
+        .business-card { 
+            background: linear-gradient(145deg, #e0e7ff 0%, #dbeafe 100%); /* Premium Light Blue */
+            border: 1px solid rgba(255,255,255,0.8); 
+            border-top: 6px solid #1e3a8a; 
+        }
+        .business-header h2 { 
+            border: none; 
+            padding-bottom: 0; 
+            font-size: 2.2rem; 
+            color: #0f172a; 
+            text-align: center;
+        }
+        .business-description { 
+            background-color: #d1e1f7; 
+            padding: 25px 30px; 
+            border-radius: 12px; 
+            border-left: 5px solid #2563eb; 
+            color: #334155; 
+            font-size: 1.1rem; 
+            text-align: justify; 
+            margin-bottom: 35px;
+        }
+        .business-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 25px; 
+        }
+        .info-item { 
+            display: flex; 
+            align-items: flex-start; 
+            gap: 15px; 
+            background: #eef5fa; /* Non-White background for info items */
+            padding: 22px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            border: 1px solid rgba(255,255,255,0.6);
+            transition: transform 0.3s ease;
+        }
+        .info-item:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.06); }
+        .info-icon { color: #2563eb; flex-shrink: 0; margin-top: 2px; }
+        .info-text strong { display: block; color: #0f172a; font-size: 1.05rem; margin-bottom: 4px; }
+        .info-text span, .info-text a { color: #475569; font-size: 1.05rem; font-weight: 500; text-decoration: none; transition: color 0.3s ease;}
+        .info-text a:hover { color: #2563eb; text-decoration: underline; }
+
+        /* Social Icons Area */
+        .social-section { 
+            border-top: 2px dashed #bfdbfe; 
+            padding-top: 35px; 
+            margin-top: 40px; 
+            text-align: center; 
+        }
+        .social-title { font-size: 1.3rem; font-weight: 700; color: #0f172a; margin-bottom: 25px; }
+        .social-icons { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+        .social-icons a { 
+            display: flex; align-items: center; justify-content: center; 
+            width: 50px; height: 50px; border-radius: 50%; 
+            background-color: #eef5fa; /* Non-white icon background */
+            border: 1px solid #bfdbfe; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0,0,0,0.04); 
+        }
+        .social-icons a:hover { 
+            transform: translateY(-4px); 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+            background-color: #ffffff; /* Turns white only on hover */
+            border-color: transparent; 
+        }
+        .social-icons svg { width: 24px; height: 24px; fill: currentColor; }
+
+        /* Original Brand Colors applied via CSS classes */
+        .icon-fb { color: #1877F2; } 
+        .icon-yt { color: #FF0000; } 
+        .icon-ig { fill: url(#ig-gradient); } 
+        .icon-x { color: #000000; } 
+        .icon-pin { color: #E60023; } 
+        .icon-in { color: #0A66C2; } 
+        .icon-reddit { color: #FF4500; } 
+        .icon-aboutme { color: #0055FF; } 
+        .icon-threads { color: #000000; } 
+        .icon-tumblr { color: #35465C; } 
+        .icon-bsky { color: #0085FF; } 
+        .icon-linktree { color: #43E660; }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .hero { padding: 80px 20px 100px 20px; }
+            .container { margin-top: -40px; }
+            .card { padding: 35px 25px; }
+            h2 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hidden SVG definitions for Gradients -->
+<svg width="0" height="0" style="position:absolute;">
+  <defs>
+    <radialGradient id="ig-gradient" r="150%" cx="30%" cy="107%">
+      <stop stop-color="#fdf497" offset="0" />
+      <stop stop-color="#fd5949" offset="0.45" />
+      <stop stop-color="#d6249f" offset="0.6" />
+      <stop stop-color="#285AEB" offset="1" />
+    </radialGradient>
+  </defs>
+</svg>
+
+<!-- Header Logo Section (Not Sticky, Not White) -->
+<div class="header-logo-section">
+    <img src="logo.jpg" alt="Auto Locksmith Dandenong Logo">
+</div>
+
+<!-- Hero Section with Background Image -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>What Should Dandenong Drivers Do After Losing Their Car Keys?</h1>
+        <p>Losing your car keys can be one of the most stressful situations a driver faces. Whether the keys are misplaced, stolen, locked inside the vehicle, or suddenly stop working, the inconvenience can quickly disrupt your daily routine. Missing work, delayed appointments, family commitments, and unexpected transportation issues are common consequences. For vehicles equipped with a Transponder Key, Remote Key Fob, or Smart Key system, replacing the key is often more complex than replacing a traditional key.</p>
+        <p style="margin-top: 15px;">The good news is that taking the right steps immediately can reduce delays, improve vehicle security, and help you regain access to your vehicle faster. By staying calm, identifying your key type, and assessing the situation carefully, Dandenong drivers can avoid unnecessary expenses while choosing the most appropriate solution for their vehicle.</p>
+    </div>
+</div>
+
+<div class="container">
+
+    <!-- Card 1 -->
+    <div class="card">
+        <h2>Stay Calm and Assess the Situation First</h2>
+        
+        <h3>Confirm Whether the Keys Are Actually Lost</h3>
+        <p>Before assuming your keys are permanently lost, take a few moments to retrace your recent movements. Check common places where you may have left them, such as your home, workplace, shopping bags, jacket pockets, or office desk. If the vehicle is nearby, carefully search inside the cabin, boot, and surrounding area. If you recently visited a shopping centre, café, or business in Dandenong, ask staff members or property managers whether someone has handed in lost keys.</p>
+
+        <h3>Determine the Type of Key You Have</h3>
+        <p>Identifying your key type helps determine the replacement process. Older vehicles often use a traditional mechanical key, while many modern cars rely on a Transponder Key with an embedded security chip. Other vehicles use a Remote Key Fob for remote locking functions or a Smart Key that allows keyless entry and push-button ignition. Knowing your key type makes it easier to find the correct replacement solution.</p>
+
+        <h3>Evaluate Your Immediate Situation</h3>
+        <p>Next, assess your surroundings and determine whether your situation requires urgent action. Consider whether your vehicle is parked in a safe location, whether it remains properly secured, and whether you have important commitments such as work, school, or travel. Evaluating your immediate circumstances will help you decide how quickly you need assistance while keeping your vehicle security a priority.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+        <h2>Secure Your Vehicle Before Taking the Next Step</h2>
+        
+        <h3>Reduce the Risk of Unauthorized Access</h3>
+        <p>After discovering your car keys are missing, protecting your vehicle should be your first priority. If possible, lock all doors and windows to reduce the risk of unauthorized access. Remove valuables such as bags, electronics, or important documents from plain sight, especially if the vehicle must remain parked for a period. If it is safe to do so, move the vehicle to a secure, well-lit location before arranging a replacement key.</p>
+
+        <h3>Consider Whether the Keys Were Lost or Stolen</h3>
+        <p>Think carefully about how the keys went missing. Misplaced keys usually present a lower security risk than stolen keys. If you believe the keys were stolen, act quickly to protect your vehicle. Stay alert for suspicious activity and consider additional security measures if someone could identify which vehicle the keys belong to.</p>
+
+        <h3>Gather Important Vehicle Information</h3>
+        <p>Having the correct vehicle details ready will help simplify the replacement process. Gather your vehicle make and model, year of manufacture, Vehicle Identification Number (VIN), and proof of vehicle ownership. This information helps verify ownership and ensures the correct replacement key is produced.</p>
+
+        <h3>Why Preparation Speeds Up Key Replacement</h3>
+        <p>Preparing your documents in advance allows technicians to verify ownership more efficiently. It also supports accurate key programming, reduces unnecessary delays, and helps ensure the replacement key is compatible with your vehicle's security system.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+        <h2>Understand Your Car Key Replacement Options</h2>
+        
+        <h3>Traditional Mechanical Key Replacement</h3>
+        <p>Vehicles with traditional mechanical keys usually have the simplest replacement process. A replacement key can often be produced by manually cutting a new key to match the original design, making duplication quicker than for electronic systems.</p>
+
+        <h3>Electronic and Transponder Key Solutions</h3>
+        <p>Modern vehicles commonly use a Transponder Key that communicates with the vehicle's Immobilizer System. Replacing these keys typically requires chip programming, immobilizer synchronization, and security verification to ensure the vehicle recognizes the new key correctly.</p>
+
+        <h3>Smart Key and Keyless Entry Systems</h3>
+        <p>Cars equipped with Keyless Entry or Smart Key technology require more advanced replacement procedures. These systems rely on electronic authentication and remote programming to restore full locking, unlocking, and engine-start functions while maintaining vehicle security.</p>
+
+        <h3>Factors That Influence Replacement Time</h3>
+        <p>Several factors affect how long key replacement takes. Vehicle technology, replacement key availability, and programming requirements all influence the overall process. Newer vehicles with advanced automotive electronics generally require more time than cars using traditional mechanical keys.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+        <h2>Information Drivers Should Have Ready Before Requesting Assistance</h2>
+        
+        <h3>Vehicle Documentation</h3>
+        <p>Having the correct documents available can speed up the replacement process. Keep your vehicle registration, personal identification, and proof of ownership ready before requesting assistance. These documents help verify that you are the legal owner and allow service providers to begin work without unnecessary delays.</p>
+
+        <h3>Key Type Information</h3>
+        <p>If possible, gather details about your existing key. Knowing whether you use a traditional key, transponder key, remote key fob, or smart key helps technicians prepare the correct equipment. If you have a spare key, mention this when requesting assistance, along with any original remote functions.</p>
+
+        <h3>Location Details</h3>
+        <p>Provide the exact location of your vehicle, including the street address, parking area, or nearby landmarks. Also mention any accessibility concerns, such as underground parking, locked gates, or parking restrictions, so technicians can prepare accordingly.</p>
+
+        <h3>Why Accurate Information Improves Service Efficiency</h3>
+        <p>Providing complete and accurate information allows an Automotive Locksmith to prepare the appropriate tools before arriving. This leads to faster response times, correct equipment preparation, and reduced waiting time throughout the replacement process.</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+        <h2>Choosing the Right Automotive Key Solution</h2>
+        
+        <h3>What to Look for in a Professional Service</h3>
+        <p>Not every vehicle uses the same key technology, so choosing an experienced provider is important. Look for professionals who have experience with modern vehicles, electronic key programming capabilities, and mobile service options. These qualities help ensure your replacement key works correctly with your vehicle's security system.</p>
+
+        <h3>Questions Drivers Should Ask Before Booking</h3>
+        <p>Before confirming an appointment, ask whether the service supports your vehicle make and model, what the key programming process involves, and how long the replacement is expected to take. Understanding these details helps set realistic expectations and avoids unnecessary delays.</p>
+
+        <h3>Preventing Future Lockout Situations</h3>
+        <p>After replacing your key, take simple steps to reduce the risk of another lockout. Keep a properly stored spare key, choose a safe location for everyday key storage, and regularly check the battery if your vehicle uses a remote key fob or smart key system.</p>
+
+        <h3>Modern Vehicle Key Services</h3>
+        <p>Drivers looking for <a href="https://locksmithdandenong.com.au/" target="_blank" class="content-link">auto keys Dandenong</a> can benefit from professional automotive key replacement, advanced Key Programming, and modern vehicle access system solutions. Experienced Automotive Locksmith services often provide replacement keys for traditional, transponder, remote, and smart key systems, helping local drivers restore secure access to their vehicles as efficiently as possible.</p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card">
+        <h2>Practical Tips to Avoid Losing Car Keys Again</h2>
+        
+        <h3>Create Consistent Key Storage Habits</h3>
+        <p>Choose one dedicated location for your keys at home and return them there every day. Building a consistent routine reduces the chances of misplacing them during busy schedules.</p>
+
+        <h3>Use Modern Tracking Solutions</h3>
+        <p>Bluetooth trackers, smart key organizers, and mobile reminder systems can make locating misplaced keys much easier. These tools provide an extra layer of convenience and help prevent unnecessary stress.</p>
+
+        <h3>Keep an Emergency Backup Plan</h3>
+        <p>Store a spare key in a secure location, leave a backup with a trusted family member if appropriate, and keep an emergency contact list available. Planning ahead can save valuable time if your primary key is ever lost again.</p>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="card">
+        <h2>Benefits of Acting Quickly After Losing Car Keys</h2>
+        
+        <h3>Better Vehicle Security</h3>
+        <p>Taking action as soon as you realize your car keys are missing helps improve vehicle protection. Securing your vehicle quickly reduces the risk of theft or unauthorized access while allowing you to restore access to your vehicle sooner. Prompt action is an important part of maintaining automotive safety.</p>
+
+        <h3>Lower Long-Term Costs</h3>
+        <p>Responding early can help prevent additional problems that may increase replacement costs. Addressing the issue before it leads to further complications can reduce emergency expenses and help avoid unnecessary damage or delays.</p>
+
+        <h3>Reduced Stress and Downtime</h3>
+        <p>The sooner you begin the replacement process, the sooner you can return to your normal routine. Acting quickly minimizes disruption to work, family commitments, and travel plans while providing greater peace of mind.</p>
+    </div>
+
+    <!-- FAQ Card -->
+    <div class="card">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-q">What should I do immediately after losing my car keys?</div>
+            <div class="faq-a"><p>Stay calm, retrace your recent movements, check common locations, secure your vehicle, and gather important vehicle information before requesting assistance.</p></div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Can a lost transponder key be replaced without the original?</div>
+            <div class="faq-a"><p>Yes. In most cases, a replacement transponder key can be created and programmed even if the original key is unavailable, provided ownership can be verified.</p></div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">How do I know if my key needs programming?</div>
+            <div class="faq-a"><p>If your vehicle uses a transponder key, remote key fob, or smart key, the replacement key will usually require programming to communicate with the vehicle's security system.</p></div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Should I replace my locks if my keys were stolen?</div>
+            <div class="faq-a"><p>If you believe your keys were stolen rather than misplaced, replacing or reprogramming your vehicle's locking or security system may provide additional protection. The most appropriate solution depends on your vehicle and security concerns.</p></div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">What information is needed to replace a car key?</div>
+            <div class="faq-a"><p>Most providers will request your vehicle registration, proof of ownership, identification, vehicle make and model, year of manufacture, and Vehicle Identification Number (VIN).</p></div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Can smart keys be replaced for modern vehicles?</div>
+            <div class="faq-a"><p>Yes. Smart keys can typically be replaced and programmed for compatible vehicles using specialized equipment designed for modern vehicle access systems.</p></div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">How can I reduce the chances of losing my car keys again?</div>
+            <div class="faq-a"><p>Create a dedicated storage location, keep a spare key in a secure place, use Bluetooth tracking devices if needed, and build a consistent daily routine for storing your keys.</p></div>
+        </div>
+    </div>
+
+    <!-- Business Information Section -->
+    <div class="card business-card">
+        <div class="business-header">
+            <h2>Trusted and Reliable Auto Keys Dandenong</h2>
+            <div class="business-description">
+                Auto Locksmith Dandenong Provide mobile car locksmith services across Dandenong. Our coverage extends throughout the Dandenong and surrounding suburbs and beyond, ensuring fast response times wherever you need help. We're committed to serving the entire Dandenong community with expert automotive locksmith services.
+            </div>
+        </div>
+
+        <div class="business-grid">
+            <div class="info-item">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <div class="info-text">
+                    <strong>Owner Name</strong>
+                    <span>Michael Simon</span>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <div class="info-text">
+                    <strong>Address</strong>
+                    <span>294 Thomas St Dandenong VIC 3175 Australia</span>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <div class="info-text">
+                    <strong>Phone</strong>
+                    <a href="tel:0410380354">0410 380 354</a>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                <div class="info-text">
+                    <strong>Website</strong>
+                    <a href="https://locksmithdandenong.com.au/" target="_blank">locksmithdandenong.com.au</a>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <div class="info-text">
+                    <strong>Business Email</strong>
+                    <a href="mailto:michael@ostanlock.com.au">michael@ostanlock.com.au</a>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <div class="info-text">
+                    <strong>Hours</strong>
+                    <span>Monday to Sunday: Open 24 Hours</span>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <div class="info-text">
+                    <strong>Year Established</strong>
+                    <span>1999</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Embeds with Original Icons -->
+        <div class="social-section">
+            <div class="social-title">Connect With Us on Social Media</div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/autolocksmithdandenong/" class="icon-fb" target="_blank" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+                <a href="https://www.youtube.com/@AutoLocksmithDandenong" class="icon-yt" target="_blank" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                </a>
+                <a href="https://www.instagram.com/lock.smithdandenong/" class="icon-ig" target="_blank" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="url(#ig-gradient)" stroke-width="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="url(#ig-gradient)" stroke-width="2"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="url(#ig-gradient)" stroke-width="2"></line></svg>
+                </a>
+                <a href="https://x.com/locksmithdande" class="icon-x" target="_blank" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24"><path d="M4 4l16 16m0-16L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
+                </a>
+                <a href="https://www.pinterest.com/locksmithdandenon/" class="icon-pin" target="_blank" aria-label="Pinterest">
+                    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.66 19.3c.1-.88.19-2.22.43-3.18.22-.9 1.45-6.14 1.45-6.14s-.37-.74-.37-1.84c0-1.72 1-3 2.25-3 1 0 1.5.76 1.5 1.67 0 1.04-.66 2.59-1 4.02-.28 1.2.6 2.18 1.78 2.18 2.13 0 3.77-2.25 3.77-5.5 0-2.87-2.07-4.88-5.02-4.88-3.4 0-5.4 2.55-5.4 5.18 0 1.04.4 2.16.9 2.77.1.12.11.23.08.35-.1.4-.33 1.34-.37 1.52-.06.23-.2.28-.44.17-1.63-.76-2.65-3.15-2.65-5.07 0-4.1 2.98-7.87 8.6-7.87 4.52 0 8.04 3.22 8.04 7.52 0 4.5-2.84 8.12-6.78 8.12-1.32 0-2.56-.68-2.98-1.5l-.8 3.1c-.3 1.1-1.1 2.5-1.65 3.35A10 10 0 1 0 12 2z"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/auto-locksmith-dandenong-48b2b841a/" class="icon-in" target="_blank" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="https://www.reddit.com/user/locksmithdandenong/" class="icon-reddit" target="_blank" aria-label="Reddit">
+                    <svg viewBox="0 0 24 24"><path d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 15.5c1.5 1 5.5 1 7 0" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="11" r="1" fill="currentColor"/><circle cx="15" cy="11" r="1" fill="currentColor"/></svg>
+                </a>
+                <a href="https://about.me/autolocksmithdandenong" class="icon-aboutme" target="_blank" aria-label="About.me">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+                </a>
+                <a href="https://www.threads.com/@lock.smithdandenong" class="icon-threads" target="_blank" aria-label="Threads">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 5.52 4.48 10 10 10 5.52 0 10-4.48 10-10v-1h-9v2h7v1c0 4.41-3.59 8-8 8s-8-3.59-8-8 3.59-8 8-8c2.25 0 4.29.93 5.75 2.44l-1.41 1.41C13.23 6.64 11.66 6 10 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6H12v-2z"/></svg>
+                </a>
+                <a href="https://www.tumblr.com/locksmithdandenong" class="icon-tumblr" target="_blank" aria-label="Tumblr">
+                    <svg viewBox="0 0 24 24"><path d="M14.56 15.5c-.52 0-1.03-.22-1.33-.61-.31-.38-.42-.89-.31-1.38V8.62H16v-3h-3.08V2h-3.22v3.62H7v3h2.7v5.27c0 1.45.54 2.8 1.54 3.75C12.24 18.6 13.6 19 15.08 19h1.92v-3h-2.44z"/></svg>
+                </a>
+                <a href="https://bsky.app/profile/locksmithdandenong.bsky.social" class="icon-bsky" target="_blank" aria-label="Bluesky">
+                    <svg viewBox="0 0 24 24"><path d="M12 10.8c-1.2-2.1-3.6-4.5-6-5.8-3.3-1.8-4.8-.8-4.8 2.6 0 1.2.6 4.3.9 5.2 1.3 4.2 4.9 5.2 8.7 4.2-2.1 3.5-6.3 4.6-9.6 2.9 5.4 3.4 10.8.6 10.8-4.4v-4.7zm0 0c1.2-2.1 3.6-4.5 6-5.8 3.3-1.8 4.8-.8 4.8 2.6 0 1.2-.6 4.3-.9 5.2-1.3 4.2-4.9 5.2-8.7 4.2 2.1 3.5 6.3 4.6 9.6 2.9-5.4 3.4-10.8.6-10.8-4.4v-4.7z" fill="currentColor"/></svg>
+                </a>
+                <a href="https://linktr.ee/locksmithdandenon" class="icon-linktree" target="_blank" aria-label="Linktree">
+                    <svg viewBox="0 0 24 24"><path d="M12 21V10m0 0l-5 5m5-5l5 5m-5-5V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Conclusion Card -->
+    <div class="card">
+        <h2>Resolve Lost Car Key Problems With Confidence</h2>
+        <h3>Key Takeaways</h3>
+        <p>Losing car keys can be inconvenient, but taking the right steps immediately helps reduce stress, improve vehicle security, and speed up the replacement process. By understanding your key type, preparing the necessary vehicle information, and planning ahead, Dandenong drivers can resolve the situation efficiently and better protect themselves from future key-related problems.</p>
+    </div>
+
+</div>
+
+<!-- Scroll Animation Script -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const cards = document.querySelectorAll('.card');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1, 
+            rootMargin: "0px 0px -30px 0px"
+        });
+
+        cards.forEach(card => {
+            observer.observe(card);
+        });
+    });
+</script>
+
+</body>
+</html>
